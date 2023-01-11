@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
-  
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
+
 <body>
   <div class="menu">
-    <div>
-      <a href="#" class="brand"><img class="brand-logo" src="images/logo.svg" alt=""></a>
-      <div class="navbar-collapse-menu">
-        <img class="open-menu" src="/images/icon-menu.svg" alt="">
-        <img class="close-menu" src="/images/icon-close-menu.svg" alt="">
-      </div>
+    <a href="#" class="brand"><img class="brand-logo" src="images/logo.svg" alt=""></a>
+    <div class="navbar-collapse-menu">
+      <img class="open-menu" src="/images/icon-menu.svg" alt="">
+      <img class="close-menu" src="/images/icon-close-menu.svg" alt="">
     </div>
 
     <nav class="nav-bar">
-        <ul class="nav-left">
-            <li class="nav-item"><a class="nav-link" href="#">Features</a> </li>
-            <li class="nav-item"><a class="nav-link" href="#">Company</a>
-                <ul class="dropdown">
-                  <li><a href="#"><img src="/images/icon-todo.svg" alt=""><span>ToDo</span></a></li>
-                  <li><a href="#"><img src="/images/icon-calendar.svg" alt=""><span>Calendar</span></a></li>
-                  <li><a href="#"><img src="/images/icon-reminders.svg" alt=""><span>Remainder</span></a></li>
-                  <li><a href="#"><img src="/images/icon-planning.svg" alt=""><span>Planing</span></a></li>
-                </ul>
+      <ul class="nav-left">
+        <li class="nav-item" role="button">
+          <a class="nav-link" href="#">Features <img class="icon" src="./images/icon-arrow-down.svg" alt=""></a>
+          <ul class="dropdown">
+            <li><a href="#"><img class="link-icon" src="/images/icon-todo.svg" alt=""><span>ToDo</span></a></li>
+            <li><a href="#"><img class="link-icon" src="/images/icon-calendar.svg" alt=""><span>Calendar</span></a></li>
+            <li><a href="#"><img class="link-icon" src="/images/icon-reminders.svg" alt=""><span>Remainder</span></a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Careers</a>
-                <ul class="dropdown">
-                  <li><a href="#"><span>History</span></a></li>
-                  <li><a href="#"><span>Our Team</span></a></li>
-                  <li><a href="#"><span>Blog</span></a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a> </li>
-        </ul>
-        <ul class="nav-right">
-          <li class="nav-item"><a class="nav-link login" href="#">Login</a> </li>
-          <li class="nav-item"><a class="nav-link register" href="#">Register</a> </li>
-        </ul>
+            <li><a href="#"><img class="link-icon" src="/images/icon-planning.svg" alt=""><span>Planing</span></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item" role="button">
+          <a class="nav-link" href="#">Company <img class="icon" src="./images/icon-arrow-down.svg" alt=""></a>
+          <ul class="dropdown">
+            <li><a href="#"><span>History</span></a></li>
+            <li><a href="#"><span>Our Team</span></a></li>
+            <li><a href="#"><span>Blog</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Careers</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a> </li>
+      </ul>
+      <ul class="nav-right">
+        <li class="nav-item"><a class="nav-link btn" href="#">Login</a> </li>
+        <li class="nav-item"><a class="nav-link btn register" href="#">Register</a> </li>
+      </ul>
     </nav>
 
-</div>
-
-<section role="main" class="hero">
-  <div class="hero-text">
-    <h1 class="main-title">
-      Make remote work
-    </h1>
-    
-    <p class="slogan">
-      Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.
-    </p>
-
-    <a href="#" class="call-to-action">Learn more</a>
-    
   </div>
 
-  <picture>
-    <source media="(min-width:768px)" srcset="./images/image-hero-desktop.png">
-    <img src="./images/image-hero-mobile.png" alt="">
-  </picture>
-</section>
+  <div class="container">
+    <section role="main" class="hero">
+      <div class="hero-text">
+        <h1 class="main-title">
+          Make remote work
+        </h1>
 
+        <p class="slogan">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
 
+        <a href="#" class="call-to-action">Learn more</a>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="partners">
+          <div class="img"><img src="./images/client-databiz.svg" alt=""></div>
+          <div class="img"><img src="./images/client-audiophile.svg" alt=""></div>
+          <div class="img"><img src="./images/client-meet.svg" alt=""></div>
+          <div class="img"><img src="./images/client-maker.svg" alt=""></div>
+        </div>
+
+      </div>
+      <div class="hero-image">
+        <picture>
+          <source media="(min-width:768px)" srcset="./images/image-hero-desktop.png">
+          <img class="img-fluid" src="./images/image-hero-mobile.png" alt="">
+        </picture>
+      </div>
+
+    </section>
+
   </div>
+
   <script src="./js/jquery-3.1.1.min.js"></script>
 
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
       $('.navbar-collapse-menu').click(function () {
         $(this).toggleClass('active')
         $('.nav-bar').toggleClass('active')
       })
+      $('li[role="button"]').click(function (e) {
+        e.preventDefault
+        if ($(this).hasClass('active')) {
+          $(this).toggleClass('active')
+        } else {
+          $('li[role="button"].active').children('.dropdown').slideToggle(250)
+          $('li[role="button"].active').removeClass('active')
+          $(this).addClass('active')
+        }
+        $(this).children('.dropdown').slideToggle(250)
+      })
     })
   </script>
 </body>
+
 </html>
