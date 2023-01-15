@@ -126,6 +126,7 @@ a:hover {
 }
 .main-title {
   font-size: 6.25rem;
+  font-weight: 700;
   line-height: 1;
 }
 .slogan{
@@ -161,20 +162,25 @@ a:hover {
   object-fit: contain;
 }
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .menu {
     padding: 0 1rem;
   }
   .menu nav {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     right: -110%;
     height: 100vh;
+    width: calc(100vw - 10rem);
+    padding: 4rem 1rem 1rem;
     overflow-y: auto;
-    padding-top: 4rem;
     z-index: 999;
     background-color: rgba(255, 255, 255, 1);
-    width: calc(100vw - 8rem);
+    border-left: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, .25);
   }
   .menu .navbar-collapse-menu {
     display: block;
@@ -201,7 +207,6 @@ a:hover {
   }
   nav li.active .dropdown {
     position: static;
-    display: block;
   }
   .btn {
     text-align: center;
